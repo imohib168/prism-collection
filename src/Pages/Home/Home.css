@@ -1,0 +1,175 @@
+.homeSection {
+    /* position: relative; */
+    /* background: url(./../../images/Wave.svg); */
+    background: var(--primaryColor);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.welcome {
+    background: url(./../../images/patterns.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.welcome .imgContainer {
+    width: 100%;
+}
+
+.imgContainer img {
+    width: 600px;
+}
+
+.welcome {
+    flex: 0.6;
+}
+
+.welcome h3 {
+    font-family: var(--font2);
+    margin-bottom: 20px;
+    font-size: 35px;
+    /*  */
+    background: var(--Orange);
+    background-clip: text;
+    color: transparent;
+}
+
+.welcome p {
+    font-family: var(--font3);
+    letter-spacing: 1px;
+    font-size: 18px;
+    width: 90%;
+    line-height: 35px;
+}
+
+.CollectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lines {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.summerCollection, .winterCollection {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.summerCollection .CollectionHeader h1, .winterCollection .CollectionHeader h1 {
+    font-size: 25px;
+    font-family: var(--font2);
+    font-weight: bold;
+    /* margin-bottom: 30px; */
+    color: var(--Black);
+}
+
+.underline {
+    width: 10%;
+    background: var(--Black);
+    height: 2px;
+    margin: 20px 0px 30px 0px;
+}
+
+.summerCollection section, .winterCollection section {
+    /* padding: 20px 0px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.summerCollection section:nth-child(:last-child) {
+    flex-direction: column;
+}
+
+.sliderimg {
+    width: 100vw;
+    height: 75vh;
+    object-fit: cover;
+}
+
+/* .btnContainer {
+    margin: 20px 0px;
+    width: 30%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+} */
+
+.btn {
+    display: flex;
+    align-items: center;
+    /*  */
+    font-family: var(--font2);
+    font-weight: bold;
+    color: var(--Black);
+    /* margin: 20px 0px 40px 0px; */
+    padding: 5px 30px;
+    background: var(--White);
+    /* border-radius: 4px; */
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    /* background: linear-gradient(to left, var(--secondaryColor), var(--White)); */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all .5s ease-in-out;
+}
+
+@media screen and (max-width: 1124px) {
+    .welcome {
+        height: 100%;
+        flex-direction: column;
+        margin: 30px 0px;
+    }
+    .summerCollection .CollectionHeader h1, .winterCollection .CollectionHeader h1 {
+        font-size: 23px;
+    }
+    .welcome .imgContainer {
+        margin-top: 20px;
+    }
+    .welcome .imgContainer img {
+        width: 100%;
+    }
+    .textContainer h3 {
+        font-size: 26px;
+    }
+    .summerCollection section, .winterCollection section {
+        flex-direction: column;
+    }
+    .underline {
+        width: 30%;
+    }
+    .btn {
+        padding: 2px 10px;
+        font-size: 10px;
+    }
+    .welcome h3 {
+        font-size: 23px;
+        text-align: center
+    }
+    .welcome p {
+        margin: 0 auto;
+        text-align: center;
+    }
+}

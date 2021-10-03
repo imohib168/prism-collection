@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
+*, ::before, ::after {
+    font-family: Arial;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    overflow-x: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a {
+    text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+li {
+    list-style-type: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+:root {
+    /* Colors--Navbar */
+    --color1: #eecda3;
+    --color2: #ef629f;
+    --color3: #4dc8cc;
+    --textColor: #014263;
+    /* Normal--Colors */
+    --White: white;
+    --black: black;
+    /* Font Sizes */
+    --fS1: 14px;
+    --fS2: 18px;
+    --fS3: 22px;
+    --fS4: 28px;
+    --fS5: 36px;
+    --fS6: 40px;
+    /* Margins */
+}
+
+:root {
+    --primaryColor: #F4F4F4;
+    --secondaryColor: #DFDFDF;
+    --Orange: orange;
+    --LightOrange: rgb(252, 227, 182);
+    --White: #ffffff;
+    --Black: #282C35;
+    --LightGray: #CBCBCB;
+    /*  */
+    --font1: 'Kiwi Maru', serif;
+    --font2: 'Poppins', sans-serif;
+    --font3: 'Hind', sans-serif;
 }

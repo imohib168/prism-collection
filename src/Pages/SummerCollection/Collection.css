@@ -1,0 +1,62 @@
+.SummerCollection, .WinterCollection {
+    background: var(--primaryColor);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cover, .WinterCover {
+    background: linear-gradient(to top left, black, transparent), url(https://images.unsplash.com/photo-1504593811423-6dd665756598?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjV8fG1hbiUyMGZhc2hpb24lMjBtb2RlbHxlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    color: white;
+    padding: 150px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    /*  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover h2, .WinterCover h2 {
+    font-family: var(--font2);
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+.summerCollectionProducts, .winterCollectionProducts {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0px;
+    /* height: auto; */
+}
+
+.summerCollectionProducts section, .winterCollectionProducts section {
+    /* display: grid; */
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-row-gap: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1124px) {
+    .cover, .WinterCover {
+        padding: 150px 0px;
+    }
+    .cover h2, .WinterCover h2 {
+        font-size: 30px;
+    }
+    .summerCollectionProducts, .winterCollectionProducts {
+        margin: 0 auto;
+        padding: 10px 0px;
+    }
+    .summerCollectionProducts section, .winterCollectionProducts section {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}

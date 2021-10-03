@@ -1,0 +1,52 @@
+.about {
+    background: url(./../../images/shiny.svg);
+    /* background: linear-gradient( to bottom right, var(--color1), transparent), url(./../../images/Sprinkle.svg); */
+    font-family: var(--font2);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about h1 {
+    font-family: var(--font2);
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 40px;
+    color: var(--Black);
+}
+
+.paragraphContainer {
+    width: 70%;
+    margin: 10px auto 50px auto;
+    color: var(--Black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.paragraphContainer p {
+    font-family: var(--font2);
+    padding: 30px 0px;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+    .about h1 {
+        padding: 30px 0px;
+    }
+    .paragraphContainer {
+        width: 90%;
+        margin: 0px auto 50px auto;
+        text-align: center;
+    }
+    .paragraphContainer p {
+        padding: 20px 0px;
+    }
+}
